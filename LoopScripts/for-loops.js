@@ -1,10 +1,13 @@
 "use strict";
 
+
 let phrase = "i love loops"
 
-for (phrase = 1; phrase < 8; phrase++) {
-    console.log(phrase, "i love loops")
+for (let i = 0; i < 7; i++) {
+    console.log(i, "i love loops")
 }
+
+console.log('-----');
 
 let phrase2 = "i also love loops"
 
