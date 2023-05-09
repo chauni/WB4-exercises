@@ -54,10 +54,9 @@ for (let j = 0; j < courses.length; j++) {
 
 console.log('The courses that cost $50 or less are:')
 
-let matching = [];
+
 for (let k = 0; k < courses.length; k++) {
     if (courses[k].Fee == '50.00') {
-        matching.push(courses[k].Title);
         console.log(courses[k].Title);
     }
 }
