@@ -36,32 +36,37 @@ const courses = [
     }
   ];
 
+console.log('The start date for PROG200 is:')
 for (let i = 0; i < courses.length; i++) {
     if (courses[i].CourseId == 'PROG200') {
-        console.log('The start date for PROG200 is:', courses[i].StartDate);
+        console.log(courses[i].StartDate);
         console.log('------');
     }
 }
 
+console.log('The title of PROJ500 is:') 
 for (let j = 0; j < courses.length; j++) {
     if (courses[j].CourseId == 'PROJ500') {
-        console.log('The title of PROJ500 is:', courses[j].Title);
+        console.log(courses[j].Title);
         console.log('------');
     }
 }
+
+console.log('The courses that cost $50 or less are:')
 
 let matching = [];
 for (let k = 0; k < courses.length; k++) {
     if (courses[k].Fee == '50.00') {
         matching.push(courses[k].Title);
-        console.log('The courses that cost $50 or less are:', courses[k].Title);
+        console.log(courses[k].Title);
     }
 }
 
 console.log('------');
 
-for (m = 0; m < courses.length; m++) {
+console.log('The classes that meet in Classroom 1 are:')
+for (let m = 0; m < courses.length; m++) {
     if (courses[m].Location == 'Classroom 1') {
-        console.log('The classes that meet in Classroom 1 are:', courses[m].CourseId);
+        console.log(courses[m].CourseId);
     }
 }
