@@ -45,3 +45,20 @@ courses.sort(function(a, b){
 for (let i = 0; i < courses.length; i++) {
     console.log(courses[i].Title)
 }
+
+/* alternative way
+
+function compareCourses(a,b) {
+    if (a.Title < b.Title) {
+        return -1
+    } if (a.Title == b.Title) {
+        return 0
+    }
+        return 1
+    }
+}
+
+courses.sort(sortCourses);
+
+'use same for loop as above'
+*/

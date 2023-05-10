@@ -26,5 +26,32 @@ let products = [
  });
 
  for (let i = 0; i < products.length; i++) {
-    console.log(products[i].price)
+    console.log(products[i].price, products[i].product)
  }
+
+ /* alt. way 
+
+ function compareProductsByName(a,b) {
+    if (a.product < b.product) {
+        return -1
+    } if (a.product == b.product) {
+        return 0
+    }
+    return -1
+ }
+
+ products.sort(compareProductsByName);
+
+ function compareProductsByPriceDescending(a,b){
+    if (a.price > b.price) {
+        return -1
+    } if (a.price == b.price) {
+        return 0
+    }
+    return 1
+ }
+
+ products.sort(compareProductsByPriceDescending);
+
+ 'use same loops as above
+ */
